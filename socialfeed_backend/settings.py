@@ -56,6 +56,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'socialfeed_backend.urls'
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
 
 TEMPLATES = [
     {
